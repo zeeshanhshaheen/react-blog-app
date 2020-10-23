@@ -12,7 +12,7 @@ const ViewPost = () => {
 
   useEffect(() => {
     loadPost();
-  }, []);
+  });
 
   const loadPost = async () => {
     const res = await axios.get(`http://localhost:3003/posts/${id}`);
